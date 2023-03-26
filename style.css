@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: arial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+h1{
+  color: white;
+  font-size: 3em;
+  padding: 15px;
+}
+
+.pad{
+  height: 135px;
+  width: 135px;
+  border-radius: 5px;
+  background-color: #333;
+  margin: 7px;
+  padding: 10px;
+  color: white;
+}
+
+section{
+  display: flex;
+}
