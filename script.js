@@ -42,13 +42,19 @@ const element = document.documentElement;
 // Preload dos arquivos de áudio
 
 element.addEventListener("keydown", (e) => {
+
+  if(e.keyCode == 32){
+    e.preventDefault();
+      kick.currentTime = 0;
+      kick.play();
+  }
+
   switch (e.key) {
     case "v":
     case "b":
       snare.currentTime = 0;
       snare.play();
       break;
-    case "a":
     case "n":
     case "m":
       e.preventDefault();
