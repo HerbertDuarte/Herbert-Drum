@@ -11,7 +11,7 @@ const tom1 = new Audio("./sounds/tom1.mp3");
 const tom2 = new Audio("./sounds/tom2.mp3");
 const tom3 = new Audio("./sounds/tom3.mp3");
 
-snare.volume = 1;
+snare.volume = 0.85;
 crashl.volume = 0.6;
 crashm.volume = 0.6;
 crashr.volume = 0.6;
