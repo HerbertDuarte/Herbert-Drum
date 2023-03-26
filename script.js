@@ -10,8 +10,10 @@ const ride = new Audio("./sounds/ride.mp3");
 const tom1 = new Audio("./sounds/tom1.mp3");
 const tom2 = new Audio("./sounds/tom2.mp3");
 const tom3 = new Audio("./sounds/tom3.mp3");
+const rimshot = new Audio("./sounds/rimshot.mp3");
 
 snare.preload = "auto";
+rimshot.preload = "auto";
 crashl.preload = "auto";
 crashm.preload = "auto";
 crashr.preload = "auto";
@@ -36,6 +38,7 @@ ride.volume = 0.9;
 tom1.volume = 0.5;
 tom2.volume = 0.5;
 tom3.volume = 0.5;
+rimshot.volume = 0.3;
 
 const element = document.documentElement;
 
@@ -50,12 +53,17 @@ element.addEventListener("keydown", (e) => {
   }
 
   switch (e.key) {
+    case "l":
+      rimshot.currentTime = 0;
+      rimshot.play();
+      break;
     case "v":
     case "b":
       snare.currentTime = 0;
       snare.play();
       break;
     case "n":
+    case "a":
     case "m":
       e.preventDefault();
       kick.currentTime = 0;
