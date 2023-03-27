@@ -13,8 +13,8 @@ const tom3 = new Audio("./sounds/tom3.mp3");
 const rimshot = new Audio("./sounds/rimshot.mp3");
 
 const element = document.documentElement;
-
-window.addEventListener('focus', ()=>{
+const loadSounds = () => {
+  console.log('loaded')
   snare.preload = "auto";
   rimshot.preload = "auto";
   crashl.preload = "auto";
@@ -28,7 +28,10 @@ window.addEventListener('focus', ()=>{
   tom1.preload = "auto";
   tom2.preload = "auto";
   tom3.preload = "auto";
-})
+
+}
+window.addEventListener('focus', loadSounds)
+window.addEventListener('load', loadSounds)
 
 snare.volume = 0.85;
 crashl.volume = 0.6;
