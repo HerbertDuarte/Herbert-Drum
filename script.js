@@ -12,19 +12,23 @@ const tom2 = new Audio("./sounds/tom2.mp3");
 const tom3 = new Audio("./sounds/tom3.mp3");
 const rimshot = new Audio("./sounds/rimshot.mp3");
 
-snare.preload = "auto";
-rimshot.preload = "auto";
-crashl.preload = "auto";
-crashm.preload = "auto";
-crashr.preload = "auto";
-floor.preload = "auto";
-kick.preload = "auto";
-openhh.preload = "auto";
-closehh.preload = "auto";
-ride.preload = "auto";
-tom1.preload = "auto";
-tom2.preload = "auto";
-tom3.preload = "auto";
+const element = document.documentElement;
+
+window.addEventListener('focus', ()=>{
+  snare.preload = "auto";
+  rimshot.preload = "auto";
+  crashl.preload = "auto";
+  crashm.preload = "auto";
+  crashr.preload = "auto";
+  floor.preload = "auto";
+  kick.preload = "auto";
+  openhh.preload = "auto";
+  closehh.preload = "auto";
+  ride.preload = "auto";
+  tom1.preload = "auto";
+  tom2.preload = "auto";
+  tom3.preload = "auto";
+})
 
 snare.volume = 0.85;
 crashl.volume = 0.6;
@@ -40,7 +44,6 @@ tom2.volume = 0.5;
 tom3.volume = 0.5;
 rimshot.volume = 0.3;
 
-const element = document.documentElement;
 
 // Preload dos arquivos de áudio
 
