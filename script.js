@@ -135,3 +135,74 @@ element.addEventListener("keydown", (e) => {
       ride.play();
   }
 });
+
+const playSound = (e) =>{
+  switch (e) {
+    case "l":
+      rimshot.currentTime = 0;
+      rimshot.play();
+      break;
+    case "v":
+    case "b":
+      snare.currentTime = 0;
+      snare.play();
+      break;
+    case "n":
+    case "a":
+    case "m":
+      kick.currentTime = 0;
+      kick.play();
+      break;
+    case "c":
+    case "x":
+      closehh.currentTime = 0;
+      closehh.play();
+      openhh.pause();
+      break;
+    case "z":
+    case "s":
+      openhh.currentTime = 0;
+      openhh.play();
+      break;
+    case "q":
+    case "w":
+      crashl.currentTime = 0;
+      crashl.play();
+      break;
+    case "d":
+    case "f":
+      tom1.currentTime = 0;
+      tom1.play();
+      break;
+    case "g":
+    case "h":
+      tom2.currentTime = 0;
+      tom2.play();
+      break;
+    case "j":
+    case "k":
+      tom3.currentTime = 0;
+      tom3.play();
+      break;
+    case ".":
+    case ",":
+    case "p":
+      floor.currentTime = 0;
+      floor.play();
+      break;
+    case "e":
+    case "r":
+      crashm.currentTime = 0;
+      crashm.play();
+      break;
+    case "t":
+    case "y":
+      crashr.currentTime = 0;
+      crashr.play();
+      break;
+    case "u":
+    case "i":
+      ride.currentTime = 0;
+      ride.play();
+  }
+}
